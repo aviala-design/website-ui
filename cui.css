@@ -1,0 +1,568 @@
+@charset "UTF-8";
+
+/* 欢迎使用connect UI */
+/* https://github.com/KAILUENG/connect-UI */
+
+@font-face {
+  font-family: 'OUR-icons';
+  src:
+    url('fonts/OUR-icons.ttf?t7xyvc') format('truetype'),
+    url('fonts/OUR-icons.woff?t7xyvc') format('woff'),
+    url('fonts/OUR-icons.svg?t7xyvc#OUR-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'OUR-icons' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  /* 用于保持页面有最基本的内间距 */
+  padding: 40px;
+  margin: 0px;
+  border-width: 0px;
+}
+
+.cui-if-use-tab {
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 40px !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+}
+/* 用于顶栏 */
+.cui-tab {
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
+  background-color: rgb(255 255 255 / 85%);
+  z-index: 1000;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  float: right;
+  transition-duration: 0.4s;
+  border-bottom: 1px;
+  border-color: black;
+}
+
+.cui-LOGO-on-tab {
+  /* 用于文字LOGO，若要使用SVG的LOGO，请使用.cui-logosvg-on-tab */
+  float: left;
+  margin: 10px;
+}
+
+.cui-title-on-tab {
+  float: left;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 16px;
+  transition-timing-function: cubic-bezier(1, 0, 0.17, 1);
+  transition: 0.4s;
+  float: right;
+}
+.cui-title-on-tab:hover {
+  background-color: #f9f8f89d;
+  transition-timing-function: cubic-bezier(1, 0, 0.17, 1);
+  transition: 0.4s;
+}
+
+@media only screen and (max-width: 846px) {
+  .cui-title-on-tab {
+    display: none;
+  }
+
+  .cui-mobie-tab {
+    display: block;
+  }
+}
+/* 用于移动端tab栏的弹出菜单 */
+.dropmenu {
+  display: none;
+  background-color: #ffffff00;
+  color: black;
+  padding: 10px;
+  font-size: 28px;
+  border: none;
+}
+
+@media only screen and (max-width: 846px) {
+  .dropmenu {
+    display: block;
+  }
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #ffffff;
+}
+
+.dropdown {
+  float: right;
+}
+
+.dropmenu {
+  float: right;
+  position: relative;
+}
+.dropmenu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropmenu-content {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1, 0.8);
+  max-height: 0;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 16px;
+  min-width: 340px;
+  overflow: auto;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.07);
+  right: 0;
+  z-index: 1;
+  margin-right: 10px;
+  margin-top: 50px;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.6, 0.02, 0, 1.01);
+}
+
+a {
+  color: black;
+  padding: 12px 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+  transition-duration: 240ms;
+}
+a:hover {
+  background-color: whitesmoke;
+  background-color: whitesmoke;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.6, 0.02, 0, 1.01);
+  max-height: 666px;
+  transform: none;
+}
+
+/* 按钮 */
+
+.cui-button {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 0px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  width: 100%;
+}
+.cui-button:hover {
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 43px 0 rgba(0, 0, 0, 0.13);
+  transform: scale(1.01, 1.01);
+}
+.cui-button:active {
+  transform: none;
+  transition: 250ms;
+}
+
+@media only screen and (max-width: 846px) {
+  .cui-button {
+    width: 100%;
+  }
+}
+/*用于下拉菜单*/
+.cui-dropmenu {
+  background-color: #ffffff;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.07);
+  margin-bottom: 20px;
+  transition: 250ms;
+}
+
+.cui-droplist-space{
+  width: 20%;
+  height: 0; /* 设置高为0，让padding撑起高 */
+  padding-bottom: 20%; /* 让div的高等于宽 */
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 846px){
+  .cui-dropmenu{  
+    width: 100%;}
+}
+
+.cui-dropmenu-content {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0px;
+  position: absolute;
+  background-color: #ffffff;
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  min-width: 300px;
+  overflow: auto;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.07);
+  z-index: 1;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.6, 0.02, 0, 1.01);
+  margin-top: 10px;
+  overflow: hidden;
+  transform: scale(1, 0.8);
+  overflow: hidden;
+  transform: scale(1, 0.8);
+}
+.cui-icons{
+  font-family: 'OUR-icons' !important;
+  margin-right: 10px;
+}
+
+.listshow {
+  visibility: visible;
+  opacity: 1;
+  max-height: 600px;
+  transform: none;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.6, 0.02, 0, 1.01);
+}
+
+.cui-dropmenu:hover {
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 43px 0 rgba(0, 0, 0, 0.13);
+  transform: scale(1.01, 1.01);
+}
+
+.cui-dropmenu:active {
+  transform: none;
+  transform: scale(0.98, 0.98);
+}
+
+.cui-pop-up-prompt {
+  background-color: #F8BD34;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: block;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.6, 0.02, 0, 1.01);
+  max-height: 100px;
+}
+
+.cui-parendisplay {
+  float: right;
+  cursor: pointer;
+  font-family: 'OUR-icons' !important;
+  font-size: 20px;
+}
+
+#cuisnackbar {
+  visibility: hidden;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.07);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.555);
+  color: black;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  font-size: 17px;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.6, 0.02, 0, 1.01);
+  opacity: 0;
+  max-height: 0px;
+  transform: scale(1, 0.8);
+  border-radius: 16px;
+  min-width: 300px;
+}
+#cuisnackbar.show {
+  visibility: visible;
+  opacity: 1;
+  max-height: 600px;
+  transform: none;
+}
+
+@media only screen and (max-width: 846px) {
+  #cuisnackbar {
+    right: 20px;
+    left: 20px;
+  }
+}
+.cui-input {
+  padding: 14px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px;
+  border-style: solid;
+  border-color: #EFEFEF;
+  outline: none;
+  transition-duration: 0.2s;
+}
+
+
+@media only screen and (max-width: 846px) {
+  .cui-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.cui-input-color {
+  padding: 8px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px;
+  border-style: solid;
+  border-color: #EFEFEF;
+  min-width: 50px;
+  outline: none;
+  transition-duration: 0.2s;
+  min-height: 50px;
+  cursor: pointer;
+}
+
+.cui-input:focus {
+  border-color: #3BA4FF;
+  border-width: 3px;
+}
+
+.cui-input-color:focus{
+  border-color: #3BA4FF;
+  border-width: 3px;
+}
+
+.cui-p-input {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  font-weight: unset;
+  color: #EFEFEF;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-weight: unset;
+  color: #EFEFEF;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-weight: unset;
+  color: #EFEFEF;
+}
+
+::-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-weight: unset;
+  color: #EFEFEF;
+}
+
+.cui-checkbox {
+  position: relative;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cui-checkbox input[type='checkbox'] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+}
+.cui-checkbox label {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.cui-checkbox label:before {
+  content: ' ';
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #EFEFEF;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.cui-checkbox label:after {
+  content: '';
+  position: absolute;
+  left: -23.5px;
+  top: 2.2px;
+  width: 6px;
+  height: 12px;
+  border: 0;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  font-family: 'OUR-icons' !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+.cui-checkbox input[type='checkbox']:checked + label:before {
+  background: #3BA4FF;
+  border-color: #3BA4FF;
+}
+
+.cui-loading {
+  border: 2px solid #EFEFEF;
+  border-radius: 50%;
+  border-top: 2px solid #3BA4FF;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: loading 2s cubic-bezier(0.56, -0.02, 0.25, 1.01) infinite;
+  animation: loading 2s cubic-bezier(0.56, -0.02, 0.25, 1.01) infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cui-stopwatch {
+  background-color: #EFEFEF;
+  min-width: 140px;
+  height: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.cui-stopwatch-advance {
+  background-color: #3BA4FF;
+  min-width: 140px;
+  height: 4px;
+  border-radius: 10px;
+  -webkit-animation: stopwatch 60s cubic-bezier(0.56, -0.02, 0.25, 1.01);
+          animation: stopwatch 60s cubic-bezier(0.56, -0.02, 0.25, 1.01);
+}
+
+@-webkit-keyframes stopwatch {
+  0% {
+    max-width: 0px;
+    min-width: 0px;
+  }
+  100% {
+    max-width: 9999px;
+    min-width: none;
+  }
+}
+
+@keyframes stopwatch {
+  0% {
+    max-width: 0px;
+    min-width: 0px;
+  }
+  100% {
+    max-width: 9999px;
+    min-width: none;
+  }
+}
+
+.cui-our-font{
+  font-family: 'OUR-icons' !important;
+  font-size: 30px;
+}
+
+
+.back-1{
+  padding: 40px;
+  padding-top: 70px;
+  background-image: linear-gradient(to bottom right, #8CC5FF, #FFFFFF);
+  margin: -40px;
+  margin-bottom: 40px;
+}
+
+.back{
+  color: #ffffff;
+  text-shadow: 8px 11px 20px rgb(0 0 0 / 10%);
+}
+
+.card{
+  background-image: linear-gradient(to bottom right, #8CC5FF, #FFFFFF);
+  padding: 40px;
+  border-radius: 16px;
+  color: #ffffff;
+  text-shadow: 8px 11px 20px rgb(0 0 0 / 10%);
+}

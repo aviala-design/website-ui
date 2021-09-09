@@ -1,123 +1,46 @@
 <!DOCTYPE html>
 <html lang="ch">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="cui.css">
     <link rel="stylesheet" type="text/css" href="fontfaces.css">
-    <script src="injs.js" defer></script>
+    <script src="cui.js" defer></script>
+    <link rel="shortcht icon" href="https://pic.imgdb.cn/item/6139a22c44eaada7398eed3d.png">
     <title>互通设计</title>
 </head>
 
-<body>
+<body class="cui-if-use-tab">
 
-    <div class="tab">
-          <p style="font-size: 30px;margin: 0px;font-weight: bolder;display: flex;float: left;">互通设计</p>
+    <div class="cui-tab">
+        <h2 class="cui-LOGO-on-tab">互通设计</h2>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropmenu">≡</button>
+              <div id="myDropdown" class="dropmenu-content">
+                <a href="https://github.com/OUR-Studio-cui-team/connect-UI">前往connect UI页</a>
+              </div>
+            </div>
     </div>
 
-    <div id="background" class="back">
-		<div id="div1" class="content">
-			<div id="close">
-				<span id="close-button">×</span>
-				<h2 class="popupfian">关于互通设计</h2>
-			</div>
-			<div id="div2">
-				<h2>互通设计 <br>由 OUR Studio 提供</h2>
-				<p>互通设计的理念是：互通交融，为每个人构造，为未来构造。最新版本为 update 2021 F1</p>
-			</div>
-		</div>
-	</div>
 
-    <ul id='menu'>
-        <li style="margin-bottom: 4px;"  id="open_btn">
-        关于 互通设计</li>
-        <li>前往开发者网站</li>
-    </ul>    
-
-<div class="backgand-b1">
-<h1 class="tltee" >
-    互通设计<br>互通交融的设计标准
-</h1>
-<p>
-互通设计的理念是：互通交融，为每个人构造，为未来构造。
-</p>
-
-<div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn" style="margin-top: 20px;">获取 互通设计 的设计包</button>
-        <div id="downloadpopup" class="popupdon">
-            <h3 style="font-size: 30px;margin: 0px;" class="content">要下载互通设计的设计包，<br>请通过下方按钮前往阿里云盘进行下载。</h3>
-            <br>
-            <button style="margin: 0px; " onclick="jumpdowload()">前往阿里云盘下载</button>
-            <br>
-        </div>
+    <div class="back-1">
+        <h1 class="back">全新的互通设计，<br>属于任何人的互通设计。</h1>
+        <p class="back">与你我共建 • 与社区共建 • 属于所有人</p>
     </div>
 
-<button style="margin-top: 20px;" class="buttonbujihuo">
-    前往connect UI页(暂不可用)
-</button>
+    <h2>无限制的开放，属于所有人</h2>
+    <p>从建立这个项目的第一天起，我们就把开放的念头放在第一位，互通设计属于所有人，每个人都可以自由的修改互通设计的一切，甚至将其加入正式发行的版本，一切皆由所有人一同创造。</p>
 
+    <h2 style="margin-top: 20px;">好用，好看，好使</h2>
+    <p>互通设计本着「美观促进效率，为所有人提供舒适的世界」进行设计，无障碍的编写和设计使得所有人都可轻易使用，美观的图标，按钮，插画和非线性动画都让体验更加舒适，开发者们还有connect UI的辅助，用互通设计，你将得到的会是舒适的体验，顺便一提，本页也使用互通设计。</p>
 
-<br>
+    <div class="card">
+    <h2>现在开始，<br>使用互通设计。</h2>
+    <p style="margin:0px;">美观促进效率，为所有人提供舒适的世界</p>
+    <button class="cui-button" style="margin: 0px;margin-top: 20px;" onclick="jumpdowload()">获取设计包</button>
+    <button class="cui-button" style="margin: 0px;margin-top: 20px;" onclick="jumpdowload()">使用connect UI</button>
+    </div>
 
-</div>
-
-<h1>
-    好的设计，因人而生。
-</h1>
-<p>
-    好的设计，给人舒适的体验，不追求炫彩夺目，效率自然就高，我们正在让互通设计朝着这个方向前进。
-</p>
-
-<h1>
-    处处可用，统一互通。
-</h1>
-<p>
-    新版互通设计在设计时处处考虑多设备适配，即使是PC端，手机端，电视又或家居，都可使用互通设计，且操作方法依旧熟悉，用户便可无缝切换。
-</p>
-
-<h1>
-    开发者也能享受互通设计的便利。
-</h1>
-<p>
-    新版互通设计为开发者准备了完备的web组件库，设计资源也全部公开，就算是开发者也可享受互通设计的便利。
-</p>
-
-<button style="margin-top: 20px;" class="buttonbujihuo">
-    前往connect UI页(暂不可用)
-</button>
-<div class="cardbackgrangd">
-    <h1 style="margin: 0px;">
-        现在开始，使用由你我共建的互通设计。
-    </h1>
-    <p>
-        众多组件和特色，都在互通设计内，我们期待您的加入，我们知道我们做不到由一个团队完成一个庞大的设计标准，因此，我们邀请您共建互通设计，一同设计互通设计的各个组件和布局，完善互通设计的web组件包，一同前进吧。
-    </p>
-    <button style="margin-top: 20px;" class="buttonbujihuo">
-        前往connect UI页(暂不可用)
-    </button>
-    <div class="dropdown">
-        <button onclick="myFunctiont()" class="dropbtn" style="margin-top: 20px;">获取 互通设计 的设计包</button>
-            <div id="downloadpopuptwo" class="popupdon">
-                <h3 style="font-size: 30px;margin: 0px;" class="content">要下载互通设计的设计包，<br>请通过下方按钮前往阿里云盘进行下载。</h3>
-                <br>
-                <button style="margin: 0px; " onclick="jumpdowload()">前往阿里云盘下载</button>
-                <br>
-            </div>
-        </div>
-
-    <div class="dropdown">
-            <button onclick="myFunctiontogether()" class="dropbtn" style="margin-top: 20px;">一同共建互通设计</button>
-                <div id="downloadpopuptwotwo" class="popupdon">
-                    <h3 style="font-size: 30px;margin: 0px;" class="content2">与我们一同构建互通设计，<br>请前往石蕊开放生态或Github帮我们构建更好的互通设计。</h3>
-                    <br>
-                    <button style="margin: 0px; " onclick="jumpclwith()">前往石蕊生态圈</button>
-                    <button style="margin: 0px; " onclick="jumpclwithgit()">前往Github一同改进connect UI</button>
-                    <br>
-                </div>
-            </div>
-
-</div>
-
+    <p style="margin-top: 50px;">OUR Studio 与你共同创建</p>
 </body>
 
 </html>
