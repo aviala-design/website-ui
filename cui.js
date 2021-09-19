@@ -36,7 +36,7 @@ function cuisnackbarshow() {
 
 function jumpdowload() {
 
-  location.replace("https://www.aliyundrive.com/s/8VPS4znwfv3");
+  location.replace("https://www.aliyundrive.com/s/AVDCYbJxc73");
 
 }
 
