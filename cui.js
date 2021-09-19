@@ -36,10 +36,10 @@ function cuisnackbarshow() {
 
 function jumpdowload() {
 
-  location.replace("https://www.aliyundrive.com/s/AVDCYbJxc73");
+  window.open("https://www.aliyundrive.com/s/AVDCYbJxc73");
 
 }
 
 function jumpcui() {
-  location.replace("https://github.com/OUR-Studio-cui-team/connect-UI")
+  window.open("https://github.com/OUR-Studio-cui-team/connect-UI")
 }
