@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="328" height="66" viewBox="0 0 328 66">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_920" data-name="矩形 920" width="328" height="66" fill="#cfe8ff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5395fd"/>
+      <stop offset="1" stop-color="#a6d3fd"/>
+    </linearGradient>
+  </defs>
+  <g id="画板_1" data-name="画板 – 1" clip-path="url(#clip-path)">
+    <rect id="矩形_919" data-name="矩形 919" width="328" height="66" fill="#d8ecff"/>
+    <g id="组_668" data-name="组 668" transform="translate(-46.613 -16.448)">
+      <path id="路径_19" data-name="路径 19" d="M42.394,3.482a11.888,11.888,0,0,1,16.812,0L98.119,42.394a11.888,11.888,0,0,1,0,16.812L59.207,98.119a11.888,11.888,0,0,1-16.812,0L3.482,59.207a11.888,11.888,0,0,1,0-16.812Z" transform="translate(0 12.382) rotate(-7)" fill="#a6d3fd"/>
+      <path id="路径_18" data-name="路径 18" d="M42.394,98.119,3.482,59.207a11.888,11.888,0,0,1,0-16.812L42.394,3.482a11.889,11.889,0,0,1,16.812,0l.705.705a11.727,11.727,0,0,1,2.314,9.366L46.994,99.676q-.11.619-.275,1.205A11.843,11.843,0,0,1,42.394,98.119Z" transform="translate(0 12.382) rotate(-7)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="Project_.Power_tallllllllllllllllllk" data-name="Project .Power tallllllllllllllllllk" transform="translate(10 29)" font-size="16" font-family="HarmonyOS_Sans_SC_Black, HarmonyOS Sans SC"><tspan x="0" y="0">PPT 世界</tspan><tspan x="0" y="22">QQ频道</tspan></text>
+    <text id="_1_22" data-name="1/22" transform="translate(224 51)" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="47" font-family="HarmonyOS_Sans_SC_Black, HarmonyOS Sans SC" letter-spacing="-0.14em"><tspan x="0" y="0">1/22</tspan></text>
+  </g>
+</svg>
