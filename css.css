@@ -31,7 +31,10 @@
     --basic-colour-Red-leaf-Background-color:rgba(255, 237, 237, 1);
     --basic-colour-Leaf-green-Background-color:rgba(217, 242, 232, 1);
 }
-
+#text{
+    letter-spacing: 0.26px;
+    font-size: 16px;
+}
 p {
     letter-spacing: 0.26px;
     font-size: 16px;
